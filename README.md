@@ -12,11 +12,15 @@ The maximum drop of the Dst index since 1957 was observed on March 14, 1989, whi
 This index is determined based on the geomagnetism observations at the following four observatories:
 
  * Kakioka in Japan (Latitude 36.23 deg, Longitude 140.18 deg)
+   * [Kakioka Magnetic Observatory](http://www.kakioka-jma.go.jp/en/index.html) is operated by Japan Meteorological Agency.
  * Honolulu in USA (Latitude 21.30 deg, Longitude 201.98 deg)
+    * [Honolulu Magnetic Observatory](https://www.usgs.gov/programs/geomagnetism/science/honolulu-hon) is operated by United States Geological Survey
  * San Juan in Puerto Rico (Latitude 18.11 deg, Longitude 293.88 deg)
+    * [San Juan Magnetic Observatory](https://www.usgs.gov/programs/geomagnetism/science/san-juan-sjg) is operated by United States Geological Survey
  * Hermanus in South Africa (Latitude -34.40 deg, Longitude 19.22 deg)
+    * Magnetic observation is conducted by [SANSA Space Science](https://www.sansa.org.za/).
 
-The calculated Dst index is published by World [Data Center for Geomagnetism, Kyoto](https://wdc.kugi.kyoto-u.ac.jp/index.html) (operated by Data Analysis Center for Geomagnetism and Space Magnetism Graduate School of Science, Kyoto University).
+The calculated Dst index is published by [World Data Center for Geomagnetism, Kyoto](https://wdc.kugi.kyoto-u.ac.jp/index.html) (operated by Data Analysis Center for Geomagnetism and Space Magnetism Graduate School of Science, Kyoto University).
 See [this page](https://wdc.kugi.kyoto-u.ac.jp/dstdir/dst2/onDstindex.html) for more details of the definition of the Dst index.
 
 ## Usage
@@ -60,3 +64,15 @@ There are more useful options. To see all available options, run the script with
 ```
 $ python plot-dst.py --help
 ```
+
+### Tips
+
+Latest date for which the Dst index is available can be found in [this page](https://wdc.kugi.kyoto-u.ac.jp/dst_final/index-j.html).
+
+## Restriction
+
+This tool uses the Dst index published by [World Data Center for Geomagnetism, Kyoto](https://wdc.kugi.kyoto-u.ac.jp/index.html). The data policy is described at [their website](https://wdc.kugi.kyoto-u.ac.jp/wdc/Sec3.html). In short, commercial use is prohibited, but the data is availble for scientific use without restrictions in principle.
+
+When the Dst index data are used in publications or presentations, the data source and Word Data Center for Geomagnetism, Kyoto shall be acknowledged. In addition, the DOI and its credit (World Data Center for Geomagnetism, Kyoto, M. Nose, T. Iyemori, M. Sugiura, T. Kamei (2015), Geomagnetic Dst index, doi:[10.17593/14515-74000](https://doi.org/10.17593/14515-74000)) shall be also posted in the publication.
+
+
