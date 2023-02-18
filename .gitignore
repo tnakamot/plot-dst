@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Ignore cache directory.
+cache/
+
+# Ignore emacs backup file.
+*~
