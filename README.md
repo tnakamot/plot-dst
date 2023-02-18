@@ -2,11 +2,11 @@
 
 This is a python tool to plot Dst (Disturbance Storm-Time) index.
 
-## What id Dst index?
+## What is Dst index?
 
-The Dst index represents variation of the horizontal components of the geomagnetism at mid-latitude region.
-It is one of the geomagnetic indices that determine the strengh of solar flares.
-When the solar flare happens, it tends to decrease the horizontal components of the geomagnetism at the Earth's surface.
+The Dst index represents variation of the horizontal components of the geomagnetism at the dipole equator on the Earth's surface.
+It is one of the geomagnetic indices that represents the strengh of solar flares.
+When a solar flare happens, it tends to decrease the horizontal components of the geomagnetism at the Earth's surface.
 The maximum drop of the Dst index since 1957 was observed on March 14, 1989, which was -589 nT.
 
 This index is determined based on the geomagnetism observations at the following four observatories:
@@ -36,7 +36,7 @@ $ pip install beautifulsoup4 matplotlib requests
 
 ### Download
 
-To download this script, simply clone this Git repository:
+To download this tool, simply clone this Git repository:
 
 ```
 $ git clone https://github.com/tnakamot/plot-dst
@@ -48,7 +48,15 @@ $ cd plot-dst
 To plot the time history of Dst index, simply run the plot-dst.py with Python3 interpreter:
 
 ```
-$ python plot-dst.py
+$ python plot-dst.py --start-date 1989-03-01 --end-date 1989-03-31
 ```
- 
-TODO: explain more
+
+The command above downloads the Dst index from [Data Center for Geomagnetism, Kyoto](https://wdc.kugi.kyoto-u.ac.jp/dst_final/index.html), save them in the cache directory ('cache/' by default) and generate plot as 'Dst.png'. You may change --start-date and --end-date arguments to adjust the plot range. Below is an example generated plot that shows the maximum drop of the Dst index on March 14, 1989.
+
+![Example plot](example/Dst_19890301_19890331.png)
+
+There are more useful options. To see all available options, run the script with --help option:
+
+```
+$ python plot-dst.py --help
+```
